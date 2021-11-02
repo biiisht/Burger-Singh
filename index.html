@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Food Delivery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px 0px;
+            padding: 0px 0px;
+        }
+
+        #navbar::before {
+            background: url("img/back.jpg") no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            margin: 0px;
+            opacity: 0.9;
+        }
+
+        .logo img {
+            width: 25rem;
+            height: 23rem;
+            margin: 41px 38px;
+
+        }
+
+        #navbar ul {
+            display: flex;
+            font-size: 2rem;
+            list-style: none;
+        }
+
+        #navbar li a {
+            display: block;
+            text-decoration: none;
+            color: goldenrod;
+            margin: 12px 2px;
+            padding: 0px 15px;
+            cursor: pointer;
+        }
+
+        #navbar li a:hover {
+            background-color: white;
+            border-radius: 40px;
+        }
+
+        .item {
+            margin: 0px 0px;
+            padding: 0px 40px;
+            text-decoration: none;
+        }
+
+        .btn {
+            display: flex;
+            margin: 2px 150px;
+            padding: 12px 29px;
+            border-radius: 50px;
+            font-size: 20px;
+            background-color: #f4d81a;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        .heading h1 {
+            font-family: 'Prompt', sans-serif;
+            margin: 36px 250px;
+            padding: 50px 317px 10px 317px;
+        }
+
+        .box {
+            border: 2px solid brown;
+            height: 20rem;
+            width: 20rem;
+            margin: 10px 20px;
+            padding: 2px 2px;
+            border-radius: 10px;
+        }
+
+        .services {
+            display: flex;
+            margin: 4px 25px;
+            padding: 8px 17px;
+        }
+
+        .box {
+            margin: 5px 50px;
+            padding: 2px 20px;
+        }
+
+        .box img {
+            display: block;
+            width: 65%;
+            padding-top: 15px;
+            height: 40%;
+            margin: auto;
+            cursor: pointer;
+        }
+
+        .box h2, p {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin: 10px;
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+            transition-property: gray;
+        }
+
+        .centre-heading {
+            display: block;
+            padding-left: 187px;
+            padding-top: 25px;
+            width: 35%;
+            margin: auto;
+            font-size: 30px;
+            font-family: 'Prompt', sans-serif;
+        }
+
+        .Clients-1 {
+            display: flex;
+            margin: 35px 100px;
+            padding: 3px 23px;
+        }
+
+        .clients-2 {
+            display: flex;
+            margin: 11px 350px;
+            padding: 10px 12px;
+        }
+
+        #dunkin {
+            width: 280px;
+            height: 220px;
+            padding: 10px 10px;
+        }
+
+        .companies img {
+            margin: 10px 10px;
+            padding: 10px 40px;
+            height: 190px;
+            width: 180px;
+        }
+
+        .company img {
+            margin: 10px 10px;
+            padding: 10px 40px;
+            height: 190px;
+            width: 250px;
+        }
+
+        footer {
+            background-color: black;
+            padding: 5px;
+            padding-left: 500px;
+            color: white;
+        }
+
+        .container {
+            width: 50%;
+            margin: 20px 410px;
+            padding: 20px 20px;
+            border-radius: 100px;
+            color: white;
+        }
+
+        .form-text {
+            margin: 10px 10px;
+            padding: 0px 10px;
+        }
+
+        .form-text input{
+            width: 40%;
+            border-radius: 5px;
+            margin: 2px 10px;
+            padding: 5px 10px;
+        }
+
+        #company{
+            width: 30%;
+            color: black;
+            padding: 2px 2px;
+            margin-top: 2px;
+            margin-left: -15px;
+        }
+
+        #Name{
+            width: 30%;
+            color: black;
+            padding: 2px 2px;
+            margin-top: 2px;
+            margin-left: -45px;
+        }
+
+        #Phone{
+            width: 30%;
+            color: black;
+            padding: 2px 2px;
+            margin-top: 2px;
+            margin-left: -45px;
+        }
+
+        #email{
+            width: 30%;
+            color: black;
+            padding: 2px 2px;
+            margin-top: 2px;
+            margin-left: -57px;
+        }
+
+        #Message{
+            width: 30%;
+            color: black;
+            padding: 2px 2px;
+            height: 50%;
+            margin-top: 2px;
+            margin-left: -49px;
+        }
+
+        .contact-centre{
+              display: block;
+              width: 30%;
+              font-size: 30px;
+              margin: 15px 572px;
+              font-family: 'Prompt', sans-serif;
+        }
+
+        .submit{
+            margin: 2px 50px;
+            padding: 6px 10px;
+            font-size: 18px;
+            border-radius: 5px;
+            width: 33%;
+            height: 30%;
+            background-color: #c82a2c;
+            color: #f4d81a;
+        }
+
+        .submit:hover{
+              background-color: #f4d81a;
+              color: black;
+              transform: scale(1.02);
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <ul>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">Menu</a></li>
+            <li class="item"><a href="#">Services</a></li>
+            <li class="item"><a href="#">About Us</a></li>
+        </ul>
+
+    </nav>
+
+    <div class="logo">
+        <img src="img/logo.png" alt="logo">
+    </div>
+    <button class="btn">Order Now</button>
+
+    <div class="heading">
+        <h1>Our Services</h1>
+    </div>
+    <div class="services">
+        <div class="box">
+            <img src="img/Box1.jpg">
+            <h2 class="food-ordering">Food Ordering</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non expedita facilis neque quidem tenetur eum
+                animi iste hic! Nesciunt, delectus! Quis alias qui provident doloribus.</p>
+        </div>
+
+        <div class="box">
+            <img src="img/catering.png">
+            <h2 class="food-ordering">Catering</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, iusto.n expedita facilis neque quidem
+                tenetur eum animi iste hic! Nesciunt, delectus! Quis alias qui provident doloribus.</p>
+        </div>
+
+        <div class="box">
+            <img src="img/Delivery.jpg">
+            <h2 class="food-ordering">Delivery</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisn expedita facilis neque quidem tenetur eum animi iste hic!
+                Nesciunt, delectus! Quis alias qui provident doloribus.icing elit. Minima, iusto.</p>
+        </div>
+    </div>
+
+    <h2 class="centre-heading">Companies that trust us</h2>
+
+    <div class="Clients-1">
+
+        <div class="companies">
+            <img src="img/kfc.jpg">
+        </div>
+
+        <div class="companies">
+            <img src="img/king.png">
+        </div>
+
+        <div class="companies">
+            <img src="img/Hut.jpg">
+        </div>
+
+
+        <div class="companies">
+            <img id="dunkin" src="img/Dunkinjpg.jpg">
+        </div>
+    </div>
+
+    <div class="clients-2">
+        <div class="company">
+            <img src="img/Mcd.jpg">
+        </div>
+
+        <div class="company">
+            <img src="img/subway.png">
+        </div>
+    </div>
+
+    <h2 class="contact-centre">Contact Us</h2>
+
+    <div class="container">
+        <form action="noaction.php">
+            <div class="form-text">
+                <p id="company">Your Company name:</p>
+                <input class="detail" type="text" placeholder="Enter company name" required>
+            </div>
+
+            <div class="form-text">
+                <p id="Name">Your Name:</p>
+                <input class="detail" type="text" placeholder="Enter your Name">
+            </div>
+
+            <div class="form-text">
+                <p id="Phone">Phone No.:</p>
+                <input class="detail" type="number" placeholder="Phone no.">
+            </div>
+
+            <div class="form-text">
+                <p id="email">E-mail:</p>
+                <input class="detail" type="email" placeholder="Email">
+            </div>
+
+            <div class="form-text">
+                <p id="Message">Message:</p>
+                <input class="detail" type="text" placeholder="Message">
+            </div>
+        </form>
+        <button class="submit">submit</button>
+    </div>
+
+    <footer>
+        <div class="center">Copyright &copy www.burgersingh.com. All right reserved</div>
+    </footer>
+</body>
+
+</html>
